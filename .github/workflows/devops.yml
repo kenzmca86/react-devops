@@ -28,5 +28,6 @@ jobs:
         cache: 'npm'
         cache-dependency-path: './react-devops/package-lock.json'
     - run: npm i
+      working-directory: react-devops
     - run: npm run build --if-present
     - run: npm test
